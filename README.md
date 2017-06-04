@@ -1,2 +1,2 @@
-# atools-pixiv
+# Hipx
 Pixiv辅助
