@@ -78,9 +78,9 @@ Ext.application({
     appFolder: AT.app.folder,
     controllers: [
         'Tool.base.controller.MvcController',
-        'Tool.base.controller.LoginController',
-        'Tool.base.controller.IndexController',
-        // 'Tool.box.IndexController',
+        // 'Tool.base.controller.LoginController',
+        // 'Tool.base.controller.IndexController',
+        'Tool.box.IndexController',
     ],
     launch: function () {
         Ext.tip.QuickTipManager.init();
@@ -93,11 +93,11 @@ Ext.application({
         tabpanel.removeAll();
 
         let pan = null;
-        pan = Ext.widget('base-index-pan');
+        // pan = Ext.widget('base-index-pan');
         // tabpanel.add(pan);
         // tabpanel.setActiveTab(pan.id);
 
-        // pan = Ext.widget('box-index-pan');
+        pan = Ext.widget('box-index-pan');
         tabpanel.add(pan);
         tabpanel.setActiveTab(pan.id);
 
